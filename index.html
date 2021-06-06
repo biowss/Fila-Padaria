@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-top w-100"></div>  
+    <div class="container-lg">
+      
+      <!-- logo + slogan -->
+      <div class="container-sm">
+        <div>
+          <img src="./images/Logo.png" class="img-fluid" alt="">
+        </div>
+        <div class=slogan-container>
+          <h2 class="slogan"> Quem quer pão? </h2>
+        </div>      
+      </div>
+
+      <!-- page-content -->
+      <div class="page-middle mt-5">
+        <div class="container container-left p-3 m-2 shadow rounded mb-auto">
+          <h3 class="mb-4"> Regras </h3>
+          <ul>
+            <li>
+              <p> Ter entre 3 e 180 anos </p>
+            </li>
+            <li>
+              <p> Tem que gostar de pão </p>
+            </li>
+            <li>
+              <p> Tem que ter assistido a capacitação </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container container-right p-3 m-2 shadow rounded ">
+          <table class="w-100">
+            <thead> 
+              <tr>
+                <th> 
+                  <h3> Fila </h3>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="fila"></tbody>
+          </table>
+
+          <div class="m-1 pt-5" id="formulario_fila">
+            <div class="w-75 p-2">
+              <div>
+                <input class="form-control form-control-md" type="text" placeholder="DIGITE SEU NOME..." id="name">                  
+                <div class="error ml-2 mb-3">
+                  <span></span>
+                </div>
+              </div>
+              <div>
+                <input class="form-control form-control-md" type="text" placeholder="Quantidade de Pães" id="quantity">
+                <div class="error ml-2 mb-3">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-25 p-2">
+              <button type="button" class="btn" onclick="add()">Quero Pão</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

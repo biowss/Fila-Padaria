@@ -1,0 +1,141 @@
+/* All */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Podkova', serif;
+  font-weight: 700;
+  background-color: #E5CF94;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #643f0b;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+span {
+  opacity: 0.9;
+}
+
+/* body container */
+
+.page-top {
+height: 3vh;
+background-color: #311B02;
+}
+.container-lg {
+  max-width: 945px;
+}
+
+/* logo + slogan */
+
+.container-sm {
+  margin-top: 10vh;
+  max-width: 70%;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: wrap;
+}
+.slogan-container {
+  margin: 5vh auto;
+  align-self: center;
+}
+.slogan {
+  color: #643f0b;
+  font-weight: 700;
+}
+
+.page-middle {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.container {
+  min-width: 200px;
+}
+
+.container-left {
+  width: 30%;
+  max-width: 100%;
+  background-color: #EDEDED;
+}
+
+.container-right {
+  width: 65%;
+  max-width: 100%;
+  background-color: #EDEDED;
+}
+
+/* .row-active {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #000000;
+  background-color: #e1e1e1;
+} */
+
+#formulario_fila {
+  display: flex;
+  flex-flow: wrap;
+}
+
+#formulario_fila .btn {  
+  font: inherit;
+  color: #311B02;
+  font-size: 1.4rem;
+  background-color: #E5CF94;
+  border-color: #643f0b;
+  border-width: 6px;
+  width: 100%;
+  height: 80%;
+  min-width: 100px;
+}
+#formulario_fila .btn:active {
+  transform: translateY(1px);
+}
+
+
+div .error {
+  height: 13px;
+}
+
+.error span {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: normal;
+  color: red;
+}
+
+
+@media(max-width: 700px) {
+
+  .container-left {
+    width: 100%;
+  }
+  
+  .container-right {
+    width:100%;
+  }
+}
+
+@media(max-width: 420px){
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+
+
